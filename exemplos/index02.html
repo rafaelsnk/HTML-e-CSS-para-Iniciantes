@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09 - JavaScript Básico</title>
+  <style>
+    .ativo {
+      margin-top: 200px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a href="./">Home</a></li>
+      <li class="produtos"><a href="./produtos.html">Produtos</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+<script>
+  //prática não recomendada
+
+  const nav = document.querySelector("nav") //selecionando toda tag nav
+  console.log(nav)
+
+  const produtos = document.querySelector('.produtos a')
+  console.log(produtos)
+
+  console.log(produtos.href);
+
+  produtos.remove();
+
+  nav.style.background = "lightBlue";
+  nav.style.padding = "20px";
+
+  nav.classList.add("ativo");
+
+  console.dir(nav);
+
+</script>
+
+</html>
